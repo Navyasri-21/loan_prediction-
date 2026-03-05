@@ -1,5 +1,5 @@
 # Loan Prediction using Machine Learning
-Project Overview
+# Project Overview
 
 Loan approval is an important task for financial institutions. Banks must evaluate whether an applicant is likely to repay a loan based on several factors such as income, education, employment status, credit history, and property details.
 
@@ -17,7 +17,7 @@ The project demonstrates the complete Machine Learning pipeline, including:
 
 >Model evaluation
 
-#Dataset Description
+# Dataset Description
 
 The dataset contains loan application details of applicants.
 
@@ -39,7 +39,7 @@ Variable	Meaning
 Loan_Status	Y = Loan Approved
 Loan_Status	N = Loan Rejected
 
-Technologies Used
+# Technologies Used
 
 • Python
 
@@ -53,13 +53,13 @@ Technologies Used
 
 • Scikit-learn
 
-Project Workflow
-#1 Data Collection
+# Project Workflow
+# 1 Data Collection
 
 The dataset is loaded using Pandas.
 
 data = pd.read_csv("train.csv")
-#2 Data Preprocessing
+# 2 Data Preprocessing
 
 Steps performed:
 
@@ -74,7 +74,7 @@ Converting text values to numeric values
 Example:
 
 data.replace({'Loan_Status':{'N':0,'Y':1}}, inplace=True)
-#3 Data Visualization
+# 3 Data Visualization
 
 Visualization helps understand patterns in the data.
 
@@ -90,7 +90,7 @@ Example visualization code:
 
 sns.countplot(x='Education', hue='Loan_Status', data=data)
 
-#Sample Visualizations
+# Sample Visualizations
 visualizations 
 education_vs_loan.png 
 marital_status_vs_loan.png
@@ -99,7 +99,7 @@ marital_status_vs_loan.png
 These graphs help understand which features influence loan approval.
 
 
-#Feature and Target Separation
+# Feature and Target Separation
 
 Input features:
 
@@ -109,7 +109,7 @@ Target variable:
 
 Y = data['Loan_Status']
 
-#Train Test Split
+# Train Test Split
 
 The dataset is divided into training and testing sets.
 
@@ -119,14 +119,14 @@ X_train, X_test, Y_train, Y_test = train_test_split(
     stratify=Y,
     random_state=2
 )
-#Model Training
+# Model Training
 
 The model used in this project is Support Vector Machine (SVM).
 
 classifier = svm.SVC(kernel='linear')
 classifier.fit(X_train, Y_train)
 
-#Model Evaluation
+# Model Evaluation
 
 Accuracy is used to evaluate model performance.
 
@@ -134,7 +134,7 @@ Dataset	Accuracy
 Training Data	    ~0.79
 Test Data	        ~0.83
 
-#Project Structure
+# Project Structure
 Loan-Prediction-ML
 │
 ├── loan_prediction.ipynb
@@ -145,7 +145,7 @@ Loan-Prediction-ML
       education_vs_loan.png
       marital_status_vs_loan.png
 
-#Key Insights
+# Key Insights
 
 From the data analysis:
 
@@ -159,7 +159,7 @@ From the data analysis:
 
 • These insights help understand the factors influencing bank decisions.
 
-#Author
+# Author
 
 Navya Sri
 B.Tech Artificial intelligence and data science Student
