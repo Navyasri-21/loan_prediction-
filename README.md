@@ -85,8 +85,6 @@ Education vs Loan Approval
 
 Marital Status vs Loan Approval
 
-Property Area vs Loan Approval
-
 Example visualization code:
 
 sns.countplot(x='Education', hue='Loan_Status', data=data)
@@ -97,7 +95,7 @@ education_vs_loan.png
 marital_status_vs_loan.png
 <img width="571" height="432" alt="image" src="https://github.com/user-attachments/assets/01e108f3-c034-48e1-81cb-898bc8336c23" />
 <img width="571" height="432" alt="image" src="https://github.com/user-attachments/assets/ac68bbdc-ad84-469a-a199-44fa32d7a239" />
-These graphs help understand which features influence loan approval.
+
 
 
 # Feature and Target Separation
