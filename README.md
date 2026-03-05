@@ -21,22 +21,22 @@ The project demonstrates the complete Machine Learning pipeline, including:
 
 The dataset contains loan application details of applicants.
 
->Input                   Features
->Feature	                Description
->Gender	                Applicant gender
->Married	                Marital status
->Dependents	            Number of dependents
->Education	              Graduate / Not Graduate
->Self_Employed	          Employment type
->ApplicantIncome	        Income of applicant
->CoapplicantIncome	      Income of co-applicant
->LoanAmount	            Loan amount requested
->Loan_Amount_Term	      Loan repayment period
->Credit_History	        Past credit record
->Property_Area	          Rural / Semiurban / Urban
+>Input                   
+>Feature	                
+>Gender	                
+>Married	              
+>Dependents	            
+>Education	              
+>Self_Employed	          
+>ApplicantIncome	       
+>CoapplicantIncome	      
+>LoanAmount	            
+>Loan_Amount_Term	      
+>Credit_History	        
+>Property_Area	        
 >Target Variable
 
->Variable	Meaning
+>Variable
 >Loan_Status	Y = Loan Approved
 >Loan_Status	N = Loan Rejected
 
